@@ -1,0 +1,6 @@
+tls:
+  certificates:
+    - certFile: C:\etc\traefik\certs\_wildcard.xmc-starter-js.localhost.pem
+      keyFile: C:\etc\traefik\certs\_wildcard.xmc-starter-js.localhost-key.pem
+    - certFile: C:\etc\traefik\certs\soccer.xmcloudcm.localhost.pem
+      keyFile: C:\etc\traefik\certs\soccer.xmcloudcm.localhost-key.pem
