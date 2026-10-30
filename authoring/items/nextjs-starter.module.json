@@ -8,6 +8,11 @@
                 "name": "DefaultRenderingHost",
                 "path": "/sitecore/system/Settings/Services/Rendering Hosts/Default",
                 "scope": "singleItem"
+            },
+             {
+                "name": "JSSExperienceAccelerator",
+                "path": "/sitecore/templates/Feature/JSS Experience Accelerator",
+                "allowedPushOperations": "CreateOnly"
             }
         ]
     }

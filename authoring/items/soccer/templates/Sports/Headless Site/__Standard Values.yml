@@ -1,0 +1,31 @@
+﻿---
+ID: "7f26622b-b1df-40f0-a4ca-1b5a39909151"
+Parent: "3cf1de5b-e523-404e-865a-f29e2b7cf34e"
+Template: "3cf1de5b-e523-404e-865a-f29e2b7cf34e"
+Path: /sitecore/templates/Project/Sports/Headless Site/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261030T124304Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\poornachander_medavarapu@epam.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\poornachander_medavarapu@epam.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e5cae99f-d95d-4ce0-95bc-ca0472f5bf08"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\poornachander_medavarapu@epam.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261030T124304Z

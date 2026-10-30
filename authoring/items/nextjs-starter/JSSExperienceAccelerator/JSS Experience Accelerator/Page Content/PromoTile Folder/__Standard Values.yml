@@ -1,0 +1,40 @@
+﻿---
+ID: "3bff73c3-413b-4250-89b9-75bb7268f1de"
+Parent: "c4024b19-9845-47a9-a426-283888c62eae"
+Template: "c4024b19-9845-47a9-a426-283888c62eae"
+Path: /sitecore/templates/Feature/JSS Experience Accelerator/Page Content/PromoTile Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {531CA6C8-960A-476D-BD5B-CBA65021FE66}
+    {C4024B19-9845-47A9-A426-283888C62EAE}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "5aa3ce9d-785e-4461-b366-143c0b0d4ebf"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260801T161156Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\poornachander_medavarapu@epam.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\poornachander_medavarapu@epam.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "01bb6a34-3478-4602-b733-f15823df110d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\poornachander_medavarapu@epam.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260801T161156Z
