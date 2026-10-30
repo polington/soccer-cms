@@ -1,0 +1,39 @@
+{
+    "$schema": "../../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "soccer",
+    "items": {
+        "path": "../soccer",
+        "includes": [
+            {
+                "name": "layout",
+                "path": "/sitecore/layout/Layouts/Project/Sports",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "renderings",
+                "path": "/sitecore/layout/Renderings/Project/Sports",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "placeholderSettings",
+                "path": "/sitecore/layout/Placeholder Settings/Project/Sports",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "templates",
+                "path": "/sitecore/templates/Project/Sports",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "SoccerRenderingHost",
+                "path": "/sitecore/system/Settings/Services/Rendering Hosts/Soccer",
+                "scope": "singleItem"
+            },
+            {
+                "name": "sportsContentRoot",
+                "path": "/sitecore/content/Sports",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            }
+        ]
+    }
+}
