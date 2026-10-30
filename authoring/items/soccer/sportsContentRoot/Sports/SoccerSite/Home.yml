@@ -1,0 +1,46 @@
+﻿---
+ID: "c2522e77-d6c7-44a0-ba5a-d9a9dbe4c9c7"
+Parent: "a4403fbf-98e4-4c7a-b502-2270d032597c"
+Template: "473df106-ba58-451b-b755-5df6bdac597d"
+Path: /sitecore/content/Sports/SoccerSite/Home
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{0FC18723-AA4F-448D-837D-91D0A84673CD}" />
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{F558BEC9-C602-4D7A-B9A1-D0411C946EA4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261030T125227Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: SoccerSite
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\poornachander_medavarapu@epam.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\poornachander_medavarapu@epam.com
+    - ID: "6853c0d3-f8c4-4cc8-b959-ade8cf964920"
+      Hint: Title
+      Value: SoccerSite
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dfc9bab1-65b0-41bc-8046-53d53464a7ca"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\poornachander_medavarapu@epam.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20261030T125259Z
