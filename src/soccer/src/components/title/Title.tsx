@@ -1,5 +1,5 @@
-import React, { JSX } from 'react';
-import { LinkField, Text, TextField } from '@sitecore-content-sdk/nextjs';
+import { JSX } from 'react';
+import { LinkField, Text, TextField, useSitecore } from '@sitecore-content-sdk/nextjs';
 import { CompatibleLink } from 'components/content-sdk/CompatibleLink';
 import { getDatasource, getFieldValue } from 'lib/component-props';
 import { TitleComponentContentProps, TitleProps } from './title.props';
@@ -12,7 +12,8 @@ const ComponentContent = ({ id, styles = '', children }: TitleComponentContentPr
   </div>
 );
 
-export const Default = ({ params, fields, page }: TitleProps): JSX.Element => {
+export const Default = ({ params, fields }: TitleProps): JSX.Element => {
+  const { page } = useSitecore();
   const { styles, RenderingIdentifier: id } = params;
   const datasource = getDatasource(fields);
   const datasourceField = getFieldValue(datasource?.field) as TextField | undefined;
