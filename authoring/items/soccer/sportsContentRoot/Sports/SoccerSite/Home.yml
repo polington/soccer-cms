@@ -17,6 +17,23 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{8EB57099-F7AF-4F6D-97AD-E6A6E70AD460}"
+              s:id="{3836D951-BB14-43AC-9231-649B7F245DC5}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B8D7F5030-4BC2-4F07-B48E-346AD2D3B679%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1&amp;Include in schema"
+              s:ph="headless-header" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20261030T125227Z
@@ -36,11 +53,11 @@ Languages:
       Value: SoccerSite
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "dfc9bab1-65b0-41bc-8046-53d53464a7ca"
+      Value: "b6c36311-72bf-4f8b-b697-4a3fdb0660a9"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\poornachander_medavarapu@epam.com
+        sitecore\prem_kumar1@epam.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20261030T125259Z
+      Value: 20261030T163429Z

@@ -27,7 +27,8 @@
             {
                 "name": "SoccerRenderingHost",
                 "path": "/sitecore/system/Settings/Services/Rendering Hosts/Soccer",
-                "scope": "singleItem"
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateOnly"
             },
             {
                 "name": "sportsContentRoot",
