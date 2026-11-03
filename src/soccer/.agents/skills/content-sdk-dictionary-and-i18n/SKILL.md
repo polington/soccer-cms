@@ -1,23 +1,24 @@
 ---
 name: content-sdk-dictionary-and-i18n
-description: Next.js i18n via next.config.js; locale from context.locale in data methods.
+description: next-intl with requestLocale = `${site}_${locale}`; routing.ts + request.ts.
 ---
 
-# Dictionary and i18n (Pages Router)
+# Dictionary and i18n (App Router)
 
-**Detail:** [AGENTS-router-specifics.md#i18n-pages-router](../../docs/AGENTS-router-specifics.md#i18n-pages-router)
+**Detail:** [AGENTS-router-specifics.md#i18n-next-intl](../../docs/AGENTS-router-specifics.md#i18n-next-intl)
 
 ## When
 
-- i18n locales, dictionary, or context.locale issues
+- Locale, dictionary, or next-intl issues
 
 ## Rules
 
-- `next.config.js` → `i18n.locales` / `defaultLocale` aligned with Sitecore
-- Always pass `context.locale` to `client.getPage`
+- `setRequestLocale(`${site}_${locale}`)` in page
+- Parse `requestLocale` in `src/i18n/request.ts`
+- `client.getDictionary({ locale, site })` in `src/i18n/request.ts`
 
 ## Stop
 
-- Stop if assuming locale from headers instead of `context.locale`
+- Stop if changing `{site}_{locale}` convention without updating all callers
 
 Docs: [Content SDK](https://doc.sitecore.com/sai/en/developers/content-sdk/sitecore-content-sdk-for-sitecoreai.html).

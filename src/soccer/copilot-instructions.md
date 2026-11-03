@@ -1,8 +1,8 @@
-# GitHub Copilot — Sitecore Content SDK Next.js (Pages Router) App
+# GitHub Copilot — Sitecore Content SDK Next.js (App Router) App
 
 For AI agent instructions, commands, and coding rules in this application, use:
 
-- **`AGENTS.md`** — Canonical source: overview, commands, Pages Router structure, DO/DON'T, guardrails, boundaries.
+- **`AGENTS.md`** — Canonical source: overview, commands, App Router structure, DO/DON'T, guardrails, boundaries.
 - **`CLAUDE.md`** — How to layer AI context for this template (start with `AGENTS.md`; add detail only when needed).
 - **`Skills.md`** and **`.agents/skills/`** — Capability index and per-task skills ([Agent Skills](https://agentskills.io)); load **one** matching skill per task.
 - **`.cursor/rules/`** — Editor rules (applied by glob; open the rule that matches your task).

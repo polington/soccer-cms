@@ -1,24 +1,23 @@
 ---
 name: content-sdk-editing-safe-rendering
-description: Preview/editing for Pages Router via context.preview and context.previewData in [[...path]].tsx.
+description: Preview/editing via draftMode() and getPreview/getDesignLibraryData in App Router pages.
 ---
 
-# Editing-safe rendering (Pages Router)
+# Editing-safe rendering (App Router)
 
-**Detail:** [AGENTS-router-specifics.md#routing-and-data-fetching](../../docs/AGENTS-router-specifics.md#routing-and-data-fetching)
+**Detail:** [AGENTS-router-specifics.md#data-fetching-and-preview](../../docs/AGENTS-router-specifics.md#data-fetching-and-preview)
 
 ## When
 
-- Editing or preview broken
-- Component must work in Page Editor or design library
+- Editing, preview, or design library behavior
 
 ## Rules
 
-- Use `context.preview` / `context.previewData` in getStaticProps/getServerSideProps
-- When preview: `client.getPreview(context.previewData)` or `getDesignLibraryData(context.previewData)`
+- Preview: `draftMode()` + `client.getPreviewData(await headers())` then `getPreview` / `getDesignLibraryData`
+- Use SDK field components in layout placeholders
 
 ## Stop
 
-- Stop if changing preview flow would break editing API routes
+- Stop if bypassing draftMode for preview
 
 Docs: [Content SDK](https://doc.sitecore.com/sai/en/developers/content-sdk/sitecore-content-sdk-for-sitecoreai.html).

@@ -25,6 +25,17 @@
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
+                "name": "media",
+                "path": "/sitecore/media library/Project/Sports",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "SoccerRenderingHost",
+                "path": "/sitecore/system/Settings/Services/Rendering Hosts/soccer",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateOnly"
+            },
+            {
                 "name": "sportsContentRoot",
                 "path": "/sitecore/content/Sports",
                 "allowedPushOperations": "CreateUpdateAndDelete"

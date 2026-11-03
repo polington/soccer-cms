@@ -1,26 +1,26 @@
 ---
 name: content-sdk-route-configuration
-description: Pages Router catch-all at src/pages/[[...path]].tsx; data via getStaticProps/getServerSideProps.
+description: App Router catch-all at src/app/[site]/[locale]/[[...path]]/page.tsx; setRequestLocale required.
 ---
 
-# Route configuration (Pages Router)
+# Route configuration (App Router)
 
-**Detail:** [AGENTS-router-specifics.md#routing-and-data-fetching](../../docs/AGENTS-router-specifics.md#routing-and-data-fetching)
-**Read first:** `src/pages/[[...path]].tsx`
+**Detail:** [AGENTS-router-specifics.md#routing-site--locale--path](../../docs/AGENTS-router-specifics.md#routing-site--locale--path)
+**Read first:** `src/app/[site]/[locale]/[[...path]]/page.tsx`
 
 ## When
 
-- Changing routing, placeholders, or Layout
-- Catch-all or _app data flow
+- Routing, layouts, placeholders
+- setRequestLocale or catch-all changes
 
 ## Rules
 
-- Single Sitecore entry: `src/pages/[[...path]].tsx`
-- Do not fetch Sitecore data in `_app.tsx`
-- Use `extractPath(context)` and `context.locale`
+- Single Sitecore page entry: `[site]/[locale]/[[...path]]/page.tsx`
+- Call `setRequestLocale(`${site}_${locale}`)` at top of page
+- Await `params` (Promise in Next.js 15+)
 
 ## Stop
 
-- Stop if adding a second catch-all for Sitecore content
+- Stop if adding a second catch-all for Sitecore pages
 
 Docs: [Content SDK](https://doc.sitecore.com/sai/en/developers/content-sdk/sitecore-content-sdk-for-sitecoreai.html).
