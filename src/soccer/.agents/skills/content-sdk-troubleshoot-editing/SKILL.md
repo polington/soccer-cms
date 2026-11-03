@@ -1,23 +1,24 @@
 ---
 name: content-sdk-troubleshoot-editing
-description: Debug Pages Router preview: context.preview, previewData, editing API routes.
+description: Check draftMode, getPreviewData(headers), setRequestLocale, getCachedPageParams, maps.
 ---
 
-# Troubleshoot editing (Pages Router)
+# Troubleshoot editing (App Router)
 
-**Detail:** [AGENTS-router-specifics.md#routing-and-data-fetching](../../docs/AGENTS-router-specifics.md#routing-and-data-fetching)
+**Detail:** [AGENTS-router-specifics.md#data-fetching-and-preview](../../docs/AGENTS-router-specifics.md#data-fetching-and-preview)
 
 ## When
 
-- Editing, preview, or design library misbehaves
+- Editing/preview/design library broken
 
 ## Rules
 
-- Check `context.preview` / `context.previewData` in `[[...path]].tsx`
-- Verify editing routes: `src/pages/api/editing/config.ts`, `render.ts`
+- `await draftMode()` in Server Components
+- Preview: `draftMode()` + `client.getPreviewData(await headers())` then `getPreview` / `getDesignLibraryData`
+- Verify component maps and editing API routes under `src/app/api/editing/`
 
 ## Stop
 
-- Escalate if platform/editor issue outside app code
+- Escalate if editor/platform issue outside app
 
 Docs: [Content SDK](https://doc.sitecore.com/sai/en/developers/content-sdk/sitecore-content-sdk-for-sitecoreai.html).

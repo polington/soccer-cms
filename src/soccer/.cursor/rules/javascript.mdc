@@ -1,5 +1,5 @@
 ---
-description: JavaScript/TypeScript rules for your Sitecore Pages Router project
+description: JavaScript/TypeScript rules for your Sitecore App Router project
 alwaysApply: false
 globs:
   - '**/*.js'

@@ -1,25 +1,26 @@
 ---
 name: content-sdk-component-registration
-description: Registers components in .sitecore/component-map.ts for Pages Router layout and editing.
+description: Registers components in .sitecore/component-map.ts and component-map.client.ts for App Router.
 ---
 
-# Component registration (Pages Router)
+# Component registration (App Router)
 
-**Detail:** [AGENTS-router-specifics.md#component-map-and-layout](../../docs/AGENTS-router-specifics.md#component-map-and-layout)
-**Read first:** `.sitecore/component-map.ts`
+**Detail:** [AGENTS-router-specifics.md#component-maps-and-layout](../../docs/AGENTS-router-specifics.md#component-maps-and-layout)
+**Read first:** `.sitecore/component-map.ts`, `.sitecore/component-map.client.ts`
 
 ## When
 
-- Component not found in layout/editor
-- Task touches the component map
+- Component missing in editor/layout
+- Task touches component maps
 
 ## Rules
 
-- Every layout component must be in `.sitecore/component-map.ts`
-- Prefer auto-generation from `src/components/`; edit manually only when generator cannot handle the case
+- Server components → `.sitecore/component-map.ts`
+- Client components → `.sitecore/component-map.client.ts`
+- Prefer auto-generation; manual edits only when generator cannot handle the case
 
 ## Stop
 
-- Stop if renaming map entries would break published layout without Sitecore-side update
+- Stop if renaming map keys would break published layout
 
 Docs: [Content SDK](https://doc.sitecore.com/sai/en/developers/content-sdk/sitecore-content-sdk-for-sitecoreai.html).

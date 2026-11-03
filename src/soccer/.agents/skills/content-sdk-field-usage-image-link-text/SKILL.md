@@ -1,24 +1,23 @@
 ---
 name: content-sdk-field-usage-image-link-text
-description: Renders Sitecore fields with SDK components Text, RichText, Image, Link.
+description: Renders Sitecore fields with SDK Text, RichText, Image, Link components.
 ---
 
-# Field usage (Text, Image, Link) (Pages Router)
+# Field usage (Text, Image, Link) (App Router)
 
-**Detail:** [AGENTS-router-specifics.md#component-map-and-layout](../../docs/AGENTS-router-specifics.md#component-map-and-layout)
+**Detail:** [AGENTS-router-specifics.md#component-maps-and-layout](../../docs/AGENTS-router-specifics.md#component-maps-and-layout)
 
 ## When
 
 - Rendering Sitecore fields
-- User mentions Text, RichText, Image, or Link
 
 ## Rules
 
-- Use `<Text>`, `<RichText>`, `<Image>`, `<Link>` from the SDK
-- Validate field existence before render
+- Use SDK field components
+- Validate fields before render
 
 ## Stop
 
-- Stop if bypassing SDK field components for user-controlled HTML without sanitization
+- Stop if rendering unsanitized external HTML
 
 Docs: [Content SDK](https://doc.sitecore.com/sai/en/developers/content-sdk/sitecore-content-sdk-for-sitecoreai.html).

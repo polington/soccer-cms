@@ -1,25 +1,25 @@
 ---
 name: content-sdk-component-data-strategy
-description: Layout data from getPage/getComponentData; path/locale from extractPath/context.
+description: Layout from getPage; site/locale from route params; serializable client props.
 ---
 
-# Component data strategy (Pages Router)
+# Component data strategy (App Router)
 
-**Detail:** [AGENTS-router-specifics.md#routing-and-data-fetching](../../docs/AGENTS-router-specifics.md#routing-and-data-fetching)
+**Detail:** [AGENTS-router-specifics.md#data-fetching-and-preview](../../docs/AGENTS-router-specifics.md#data-fetching-and-preview)
 
 ## When
 
-- How component receives Sitecore data
-- BYOC or serializable props to client
+- Component props / data flow
+- BYOC registration
 
 ## Rules
 
-- Data from `getPage` + `getComponentData` in catch-all page
-- Pass serializable props to client components
-- BYOC must be registered in component map
+- `client.getPage(path ?? [], { site, locale })` in page Server Components
+- Pass `{ site, locale }` from `await params`
+- Client components get serializable props only
 
 ## Stop
 
-- Stop if introducing a second data-fetch path without clear need
+- Stop if adding parallel fetch path
 
 Docs: [Content SDK](https://doc.sitecore.com/sai/en/developers/content-sdk/sitecore-content-sdk-for-sitecoreai.html).

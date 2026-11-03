@@ -23,10 +23,3 @@
 
 # sitecore temp files
 .sitecore/
-
-
-# typescript build cache
-*.tsbuildinfo
-
-# next.js generated types (path varies between dev and build)
-next-env.d.ts

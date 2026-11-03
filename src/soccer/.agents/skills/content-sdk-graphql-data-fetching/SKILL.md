@@ -1,26 +1,27 @@
 ---
 name: content-sdk-graphql-data-fetching
-description: Page/dictionary fetch via SitecoreClient in [[...path]].tsx getStaticProps/getServerSideProps.
+description: Page/dictionary via SitecoreClient; SSG via getAppRouterStaticParams.
 ---
 
-# Data fetching (Pages Router)
+# Data fetching (App Router)
 
-**Detail:** [AGENTS-router-specifics.md#routing-and-data-fetching](../../docs/AGENTS-router-specifics.md#routing-and-data-fetching)
-**Read first:** `src/pages/[[...path]].tsx`, `src/lib/sitecore-client.ts`
+**Detail:** [AGENTS-router-specifics.md#data-fetching-and-preview](../../docs/AGENTS-router-specifics.md#data-fetching-and-preview)
+**Read first:** `src/app/[site]/[locale]/[[...path]]/page.tsx`, `src/lib/sitecore-client.ts`
 
 ## When
 
-- Fetching page or dictionary data
-- SSG paths or preview data
+- Page or dictionary fetch
+- generateStaticParams / SSG
 
 ## Rules
 
-- Path from `extractPath(context)`; locale from `context.locale`
-- `client.getPage(path, { locale })` then `getDictionary` and `getComponentData`
-- SSG paths: `client.getPagePaths(sites, context?.locales)`
+- `client.getPage(path ?? [], { site, locale })` in page Server Components
+- `client.getDictionary({ locale, site })` in `src/i18n/request.ts`
+- SSG: `getAppRouterStaticParams` when `generateStaticPaths` true; else `return []`
+- Preview: `draftMode()` + `client.getPreviewData(await headers())` then `getPreview` / `getDesignLibraryData`
 
 ## Stop
 
-- Stop if fetching in client components when SSR/SSG is intended
+- Stop if fetching in client components
 
 Docs: [Content SDK](https://doc.sitecore.com/sai/en/developers/content-sdk/sitecore-content-sdk-for-sitecoreai.html).

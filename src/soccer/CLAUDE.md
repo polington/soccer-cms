@@ -1,4 +1,4 @@
-# Claude Code — Sitecore Content SDK Next.js (Pages Router) App
+# Claude Code — Sitecore Content SDK Next.js (App Router) App
 
 **Start here:** [`AGENTS.md`](AGENTS.md) — compact guide (commands, structure, guardrails, DO/DON'T).
 

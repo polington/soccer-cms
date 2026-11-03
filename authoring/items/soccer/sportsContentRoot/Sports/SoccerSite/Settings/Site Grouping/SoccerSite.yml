@@ -28,10 +28,10 @@ SharedFields:
   Value: *
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "6709acb3-eb7e-4c6d-bf55-0ab9737954b5"
+  Value: "4fc7b34a-54b7-471f-945b-1a4bbaecabd6"
 - ID: "f57099a3-526a-49f2-aebd-635453e48875"
   Hint: RenderingHost
-  Value: Default
+  Value: soccer
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{23E42340-77BE-49FC-A7C4-77D3CB545223}"
@@ -53,11 +53,11 @@ Languages:
         sitecore\poornachander_medavarapu@epam.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "be3804f8-7813-47b0-a504-e6a2346d4a5b"
+      Value: "b5724166-8051-4720-ab3d-0740ca973231"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\poornachander_medavarapu@epam.com
+        sitecore\prem_kumar1@epam.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20261030T125259Z
+      Value: 20261031T090400Z

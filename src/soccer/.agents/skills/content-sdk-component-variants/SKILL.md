@@ -1,23 +1,23 @@
 ---
 name: content-sdk-component-variants
-description: Multiple renderings of one component type; regenerate component map after changes.
+description: Multiple presentations per component; regenerate maps after changes.
 ---
 
-# Component variants (Pages Router)
+# Component variants (App Router)
 
-**Detail:** [AGENTS-router-specifics.md#component-map-and-layout](../../docs/AGENTS-router-specifics.md#component-map-and-layout)
+**Detail:** [AGENTS-router-specifics.md#component-maps-and-layout](../../docs/AGENTS-router-specifics.md#component-maps-and-layout)
 
 ## When
 
-- One component type with multiple presentations or variants
+- Component variants or alternate renderings
 
 ## Rules
 
-- Follow existing variant patterns in `src/components/`
-- Regenerate component map after changes
+- Mirror existing variant patterns
+- Regenerate component maps
 
 ## Stop
 
-- Stop if variant rename would break layout without Sitecore update
+- Stop if variant change breaks layout item without Sitecore update
 
 Docs: [Content SDK](https://doc.sitecore.com/sai/en/developers/content-sdk/sitecore-content-sdk-for-sitecoreai.html).
